@@ -40,6 +40,7 @@
 .logo {
     font-weight: 700;
     margin: auto;
+    font-size: 1.3rem;
 }
 
 .search {
@@ -191,7 +192,7 @@ main {
 /* ! Charts */
 /* -------------------------------------------------------------------------------- */
 .charts {
-    padding-top: 80px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -224,3 +225,54 @@ canvas#doughnut-chart {
     width: 100%;
     height: 100%;
 }
+
+/* -------------------------------------------------------------------------------- */
+/* ! Media query */
+/* -------------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+    .card-icon {
+        font-size: 2.3rem;
+    }
+
+    .card-data {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+        #sidebar {
+            width: 60px;
+        }
+
+        #sidebar ul li span {
+            display: none;
+        }
+
+        #sidebar ul li a {
+            padding: 20px;
+        }
+
+        main {
+            left: 60px;
+            width: calc(100% - 60px);
+        }
+
+        .cards {
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex-basis: 50%;
+            flex-wrap: wrap;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .cards {
+            display: inline-block;
+            width: 100%;
+        }
+    }
