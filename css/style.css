@@ -14,6 +14,7 @@
     --secondary-color: #26499b;
     --accent-color: #9b263b;
     --light-color: #eee;
+    --light-grey: #ccc;
 }
 
 .active {
@@ -131,4 +132,56 @@
 #sidebar ul li a:hover {
     background-color: var(--light-color);
     color: var(--secondary-color);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Main */
+/* -------------------------------------------------------------------------------- */
+main {
+    position: absolute;
+    top: 70px;
+    left: 260px;
+    background-color: var(--light-color);
+    min-height: calc(100vh - 70px);
+    width: calc(100% - 260px);
+    padding: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-basis: 23%;
+    border-radius: 10px;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, .08);
+    padding: 35px 20px;
+}
+
+.card-content {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.card:hover,
+.card:hover * {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.card-data {
+    color: var(--light-grey);
+}
+
+.card-icon {
+    font-size: 3.5rem;
+}
+
+.card-number,
+.card-icon {
+    color: var(--primary-color);
+    font-weight: 600;
 }
