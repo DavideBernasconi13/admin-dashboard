@@ -213,7 +213,11 @@ main {
 
 #doughnut {
     flex-basis: 40%;
-    border: 1px solid red;
+    align-items: center;
+}
+
+canvas#doughnut-chart {
+    margin-top: 30px;
 }
 
 #myChart {
